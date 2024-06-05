@@ -1,0 +1,17 @@
+.nav-item {
+    margin-right: 2vw;
+    font-size: 22px;
+}
+
+#brand-name {
+    font-family: "Playfair Display", Arial, Helvetica, sans-serif
+}
+
+#logo {
+    height: 10vh;
+}
+
+#book-now-btn {
+    background-color: #0a2463;
+    margin: auto;
+}
