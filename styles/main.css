@@ -1,6 +1,28 @@
+p {
+    margin: 1rem 0 1rem 0;
+}
+
+select:invalid {
+    color: grey;
+}
+
 .nav-item {
     margin-right: 2vw;
     font-size: 22px;
+}
+
+.bg-dark-blue {
+    background-color: #0a2463;
+}
+
+.top-bottom-margin {
+    margin: 3vh 0 3vh 0;
+}
+
+.circular-image {
+    height: 175px;
+    width: 175px;
+    border-radius: 100%;
 }
 
 #brand-name {
@@ -9,9 +31,14 @@
 
 #logo {
     height: 10vh;
+    width: 10vh;
 }
 
-#book-now-btn {
+#submit-btn:hover {
     background-color: #0a2463;
-    margin: auto;
+}
+
+#confirmation-box {
+    border-color: black;
+    border-style: solid;
 }
