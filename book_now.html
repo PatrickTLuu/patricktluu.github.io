@@ -25,10 +25,100 @@
               <a class="nav-link text-light" href="services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light rounded-pill" id="book-now-btn" href="book_now.html">Book Now</a>
+              <a class="nav-link text-light rounded-pill bg-dark-blue" href="book_now.html">Book Now</a>
             </li>
           </ul>
     </nav>
+
+    <div class="container">
+        <div class="row text-center">
+          <div col-12>
+            <h2 class="display-4">Book Your Appointment</h2>
+            <img class="img-fluid" id="logo" src="images/logo.png">
+          </div>
+        </div>
+
+        <form>
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-4">
+              <label for="first-name" class="form-label ms-2">First name</label>
+              <input class="form-control rounded-pill" id="first-name">
+            </div>
+
+            <div class="col-4">
+              <label for="last-name" class="form-label ms-2">Last name</label>
+              <input class="form-control rounded-pill" id="last-name"></input>
+            </div>
+            <div class="col-2"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+              <div class="mb-3">
+
+              </div>
+              <div class="mb-3">
+
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label ms-2">Email Address</label>
+                <input type="email" class="form-control rounded-pill" id="email" placeholder="example@example.com">
+              </div> 
+
+              <div class="mb-3">
+                <label for="barber" class="form-label ms-2">Select a barber</label>
+                <select class="form-select dropdown rounded-pill" id="barber" aria-label="Select a barber" required>
+                  <option value="">-------------------</option>
+                  <option>John Doe</option>
+                  <option>Jane Doe</option>
+                  <option>Jim Doe</option>
+                  <option>Jennifer Doe</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="service" class="form-label ms-2">Select a service</label>
+                <select class="form-select dropdown rounded-pill" id="service" aria-label="Select a service" required>
+                  <option value="">-------------------</option>
+                  <option>Barber Cut - $45</option>
+                  <option>Skin Fade - $35</option>
+                  <option>Cub's Cut - $25</option>
+                  <option>Long/Creative Cut - $55</option>
+                  <option>Barber Cut & Shampoo - $55</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-2"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-4">
+                <label for="date" class="form-label ms-2">Select a date</label>
+                <input type="date" class="form-control rounded-pill" id="date">
+            </div>
+
+            <div class="col-4">
+              <label for="date" class="form-label ms-2">Select a time</label>
+              <select class="form-select dropdown rounded-pill" aria-label="Select a time" required>
+                <option value="">-------------------</option>
+              </select>
+            </div>
+            <div class="col-2"></div>
+          </div>
+
+          <div class="row top-bottom-margin text-center">
+            <div class="col-2"></div>
+            <div class="col-8">
+              <button type="submit" class="btn btn-lg bg-dark-blue text-light" id="submit-btn">Submit</button>
+            </div>
+            <div class="col-2"></div>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
