@@ -31,14 +31,13 @@
     </nav>
 
     <div class="container">
-        <div class="row text-center">
-          <div col-12>
-            <h2 class="display-4">Book Your Appointment</h2>
-            <img class="img-fluid" id="logo" src="images/logo.png">
-          </div>
-        </div>
-
         <form id="booking-form">
+            <div class="row top-bottom-margin text-center">
+                <div class="col-12">
+                <h2 class="display-4" id="booking-heading">Book your appointment</h2>
+                <img class="img-fluid" id="logo" src="images/logo.png">
+              </div>
+            </div>
           <div class="row">
             <div class="col-2"></div>
             <div class="col-4">
@@ -63,7 +62,7 @@
 
               <div class="mb-3">
                 <label for="barber" class="form-label ms-2">Select a barber</label>
-                <select class="form-select dropdown rounded-pill" name="barber" aria-label="Select a barber" required>
+                <select class="form-select dropdown rounded-pill" name="barber" id="barber" aria-label="Select a barber" required>
                   <option value="">-------------------</option>
                   <option>John Doe</option>
                   <option>Jane Doe</option>
@@ -74,7 +73,7 @@
 
               <div class="mb-3">
                 <label for="service" class="form-label ms-2">Select a service</label>
-                <select class="form-select dropdown rounded-pill" name="service" aria-label="Select a service" required>
+                <select class="form-select dropdown rounded-pill" name="service" id="service" servicearia-label="Select a service" required>
                   <option value="">-------------------</option>
                   <option>Barber Cut - $45</option>
                   <option>Skin Fade - $35</option>
@@ -95,14 +94,14 @@
             </div>
 
             <div class="col-3">
-              <label for="date" class="form-label ms-2">Select a time</label>
+              <label for="time" class="form-label ms-2">Select a time</label>
               <select class="form-select dropdown rounded-pill" aria-label="Select a time" name="time" id="time" required>
-                <option value="" id="time-header">-------------------</option>
+                <option value="">-------------------</option>
               </select>
             </div>
 
             <div class="col-2">
-              <label for="date" class="form-label ms-2">Select a frequency</label>
+              <label for="frequency" class="form-label ms-2">Select a frequency</label>
               <select class="form-select dropdown rounded-pill" aria-label="Select a frequency" name="frequency" id="frequency" required>
                 <option>Once</option>
                 <option>Biweekly</option>
@@ -119,19 +118,22 @@
             <div class="col-12">
               <div class="form-check">
                 <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">Do you want to recieve an email notification the day before your appointment?</label>
+                <label class="form-check-label" for="flexCheckDefault">Do you want the above email to recieve a notification the day before your appointment?</label>
               </div>
             </div>
             
           </div>
 
-          <div class="row top-bottom-margin text-center">
+          <div class="row top-bottom-margin">
             <div class="col-2"></div>
-            <div class="col-8">
-              <button type="submit" class="btn btn-lg bg-dark-blue text-light" id="submit-btn">Submit</button>
+            <div class="col-4 text-start">
+              <button type="submit" class="btn btn-lg btn-no-hover bg-dark-blue text-light" id="add-person-btn">Add another person</button>
+            </div>
+            <div class="col-4 text-end">
+              <button type="submit" class="btn btn-lg btn-no-hover bg-dark-green text-light" id="submit-btn">Submit</button>
             </div>
             <div class="col-2"></div>
-          </div>
+          </div>       
         </form>
       </div>
     </div>

@@ -15,6 +15,10 @@ select:invalid {
     background-color: #0a2463;
 }
 
+.bg-dark-green {
+    background-color: darkgreen;
+}
+
 .top-bottom-margin {
     margin: 3vh 0 3vh 0;
 }
@@ -31,6 +35,10 @@ select:invalid {
     float: none !important;
 }
 
+.btn-no-hover:hover {
+    background-color: #0a2463;
+}
+
 #brand-name {
     font-family: "Playfair Display", Arial, Helvetica, sans-serif
 }
@@ -38,10 +46,6 @@ select:invalid {
 #logo {
     height: 10vh;
     width: 10vh;
-}
-
-#submit-btn:hover {
-    background-color: #0a2463;
 }
 
 #confirmation-box {
