@@ -3,28 +3,31 @@ const barberDropdown = document.getElementById("barber")
 const dateInput = document.getElementById("date");
 const timeDropdown = document.getElementById("time");
 const frequencyDropdown = document.getElementById("frequency");
-const addPersonBtn = document.getElementById("add-person-btn")
+const addPersonBtn = document.getElementById("add-person-btn");
 
 function setTimeOptions() {
-    const day = new Date(dateInput.value);
+    if (localStorage.getItem("date-selected") != null) { // Prevent times from duplicating when reselecting time
+        const day = new Date(dateInput.value);
+        localStorage.removeItem("date-selected");
 
-    if ((day.getDay() + 1) % 7 == 0) { //Sunday
-        var option = new Option();
-        option.innerText = "CLOSED";
-        timeDropdown.appendChild(option);
-    }
-    else if (day.getDay() + 1 == 6) { // Saturday
-        for (let i = 12; i < 16; i++) {
+        if ((day.getDay() + 1) % 7 == 0) { //Sunday
             var option = new Option();
-            option.innerText = i + ":00";
+            option.innerText = "CLOSED";
             timeDropdown.appendChild(option);
         }
-    }
-    else {
-        for (let i = 10; i < 18; i++) {
-            var option = new Option();
-            option.innerText = i + ":00";
-            timeDropdown.appendChild(option);
+        else if (day.getDay() + 1 == 6) { // Saturday
+            for (let i = 12; i < 16; i++) {
+                var option = new Option();
+                option.innerText = i + ":00";
+                timeDropdown.appendChild(option);
+            }
+        }
+        else {
+            for (let i = 10; i < 18; i++) {
+                var option = new Option();
+                option.innerText = i + ":00";
+                timeDropdown.appendChild(option);
+            }
         }
     }
 }
@@ -35,6 +38,8 @@ function removeTimeOptions() {
     option.value = "";
     timeDropdown.innerHTML = "";
     timeDropdown.appendChild(option);
+
+    localStorage.setItem("date-selected", "true")
 }
 
 function addPerson() {
