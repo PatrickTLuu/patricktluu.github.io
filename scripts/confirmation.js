@@ -4,6 +4,7 @@ const barber = document.getElementById("barber");
 const service = document.getElementById("service");
 const date = document.getElementById("date");
 const time = document.getElementById("time");
+const frequency = document.getElementById("frequency");
 
 function setInfo() {
     console.log(localStorage.key(0));
@@ -13,6 +14,7 @@ function setInfo() {
     service.innerText = "Service: " + localStorage.getItem("service");
     date.innerText = "Date: " + localStorage.getItem("date");
     time.innerText = "Time: " + localStorage.getItem("time");
+    frequency.innerText = "Frequency: " + localStorage.getItem("frequency");
 }
 
 function generateCode() {

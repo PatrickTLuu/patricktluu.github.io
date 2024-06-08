@@ -25,6 +25,12 @@ select:invalid {
     border-radius: 100%;
 }
 
+.checkbox {
+    border-color: black;
+    margin-right: 0.5vw;
+    float: none !important;
+}
+
 #brand-name {
     font-family: "Playfair Display", Arial, Helvetica, sans-serif
 }
