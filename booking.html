@@ -91,14 +91,13 @@
             <div class="col-2"></div>
             <div class="col-4">
                 <label for="date" class="form-label ms-2">Select a date</label>
-                <input type="date" class="form-control rounded-pill" name="date" required>
+                <input type="date" class="form-control rounded-pill" name="date" id="date" required>
             </div>
 
             <div class="col-4">
               <label for="date" class="form-label ms-2">Select a time</label>
-              <select class="form-select dropdown rounded-pill" aria-label="Select a time" name="time" required>
-                <option value="">-------------------</option>
-                <option>Temp</option>
+              <select class="form-select dropdown rounded-pill" aria-label="Select a time" name="time" id="time" required>
+                <option value="" id="time-header">-------------------</option>
               </select>
             </div>
             <div class="col-2"></div>
